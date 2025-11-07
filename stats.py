@@ -13,13 +13,14 @@ def get_character_count(text):
                 characterDict[letter] += 1
     return characterDict
 
-countList = []
+
 
 def sort_on(countList):
     return countList["num"]
 
 
 def sort_dictionary(characterDict):
+    countList = []
     for character, num in characterDict.items():
         if not character.isalpha():
             continue
