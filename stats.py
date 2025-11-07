@@ -2,15 +2,15 @@ def get_word_count(text):
     words = text.split()
     return len(words)
 
-characterDict = {str, int}
+characterDict = {}
 
-""" def get_character_count(text):
+def get_character_count(text):
     for word in text:
-        word.lower()
-        for character in word:
-            if character not in characterDict:
-                characterDict.add(character)
-        
-        print(characterDict)
-"""
-
+        word = word.lower()
+        for letter in word:
+            if letter not in characterDict:
+                characterDict[letter] = 1
+            else:
+                characterDict[letter] += 1
+    return characterDict
+    
